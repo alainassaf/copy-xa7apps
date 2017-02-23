@@ -1,5 +1,5 @@
 # copy-xa7apps
-Runs delprof2.exe on servers in the selected Worker Group
+Copies published (active) applications from one XenApp/XenDesktop 7.x farm to another
 
 #Contributions to this script
 I'd like to highlight the posts that helped me write this scrip below.
