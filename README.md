@@ -7,19 +7,19 @@ I'd like to highlight the posts that helped me write this scrip below.
 
 $ get-help .\copy-xa7apps.ps1 -full
 
-NAME
+NAME<br>
     copy-xa7apps.ps1
     
-SYNOPSIS
+SYNOPSIS<br>
     Copies published (active) applications from one XenApp/XenDesktop 7.x farm to another
     
-SYNTAX
+SYNTAX<br>
     copy-xa7apps.ps1 [-Folders] <Array> [[-DeliveryGroup] 
     <String>] [[-ApplicationGroup] <String>] [-FromFarmDC] <String> [-ToFarmDC] <String> [[-DisableApps] <Boolean>] 
     [<CommonParameters>]
     
     
-DESCRIPTION
+DESCRIPTION<br>
     Copies published (active) applications from one XenApp/XenDesktop 7.x farm to another.
     The script assumes that Delivery and Application groups are the same in both farms. If an Admin folder is not 
     in the destination farm, it will be created.
@@ -89,10 +89,10 @@ PARAMETERS
         OutBuffer, PipelineVariable, and OutVariable. For more information, see 
         about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216). 
     
-INPUTS
+INPUTS<br>
     None. You cannot pipe objects to this script.
     
-OUTPUTS
+OUTPUTS<br>
     No objects are output from this script.
     
 NOTES
