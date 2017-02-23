@@ -26,7 +26,7 @@ DESCRIPTION<br>
     The script assumes The XenApp/XenDesktop 7 PowerShell cmdlets are installed.
     
 
-PARAMETERS
+PARAMETERS<br>
     -Folders <Array>
         Required parameter. The folders within the XenApp farm to be migrated. Should be specified as 
         "Applications/<folderName1>/<folderName2>" If no folders are specified all applications in the farm
