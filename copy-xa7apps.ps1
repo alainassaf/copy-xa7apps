@@ -52,13 +52,14 @@
 	http://www.shaunritchie.co.uk
 .NOTES
     NAME: copy-xa7apps.ps1
-    VERSION: 1.01
+    VERSION: 1.02
     CHANGE LOG - Version - When - What - Who
     1.00 - 02/23/2017 -Initial script, portions based on Shaun Ritchie's http://euc.consulting/blog/xenapp6-to-xenapp7-app-migration-script - Alain Assaf
     1.01 - 02/23/2017 -Minor edits - Alain Assaf
+    1.02 - 02/24/2017 -Removed duplicate array variable - Alain Assaf
     AUTHOR: Alain Assaf
     NAME: copy-xa7apps.ps1
-    LASTEDIT: Feburary 23, 2017
+    LASTEDIT: Feburary 24, 2017
 .LINK
     http://www.linkedin.com/in/alainassaf/
     http://wagthereal.com
@@ -99,9 +100,8 @@ Param (
 Add-PSSnapin Citrix.* -ErrorAction silentlycontinue
 
 [Array]$AppReport = @()
-
-[Array]$AppReport = @()
 [Array]$XAApplist = @()
+
 If ($Folders -ne $null) {
     ForEach ($Folder in $Folders) {
         $SubFolders += Get-BrokerAdminFolder -AdminAddress $FromFarmDC -Name $Folder
